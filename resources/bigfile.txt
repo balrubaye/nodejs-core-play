@@ -1,0 +1,108 @@
+
+(	The Canterbury Corpus	)
+home | purpose | summary | details | corpora | methods | related | credits | faq
+
+Descriptions of the corpora
+This site contains compression results for a variety of compression methods when run on the contents of three corpora: the Canterbury Corpus, the Calgary Corpus, and the Large Corpus. This page provides brief descriptions of the corpora and their constituent files.
+Contents
+The Canterbury Corpus
+The Artificial Corpus
+The Large Corpus
+The Miscellaneous Corpus
+The Calgary Corpus
+The Canterbury Corpus
+This collection is the main benchmark for comparing compression methods. The Calgary collection is provided for historic interest, the Large corpus is useful for algorithms that can't "get up to speed" on smaller files, and the other collections may be useful for particular file types.
+
+This collection was developed in 1997 as an improved version of the Calgary corpus. The files were chosen because their results on existing compression algorithms are "typical", and so it is hoped this will also be true for new methods.
+The paper in DCC '97 (Adobe PDF, 99Kb) explains how the files were chosen, and why it is difficult to find "typical" files. This collection will not be changed so that it can be used as a benchmark in future.
+
+There are 11 files in this corpus:
+
+File	Abbrev	Category	Size
+alice29.txt	text	English text	 152089
+asyoulik.txt	play	Shakespeare	 125179
+cp.html	html	HTML source	 24603
+fields.c	Csrc	C source	 11150
+grammar.lsp	list	LISP source	 3721
+kennedy.xls	Excl	Excel Spreadsheet	 1029744
+lcet10.txt	tech	Technical writing	 426754
+plrabn12.txt	poem	Poetry	 481861
+ptt5	fax	CCITT test set	 513216
+sum	SPRC	SPARC Executable	 38240
+xargs.1	man	GNU manual page	 4227
+(All file sizes in bytes)
+
+The full set of files is available as cantrbry.tar.gz or cantrbry.zip
+
+The Artificial Corpus
+This collection contains files for which the compression methods may exhibit pathological or worst-case behaviour--files containing little or no repetition (e.g. random.txt), files containing large amounts of repetition (e.g. alphabet.txt), or very small files (e.g. a.txt).
+
+As such, "average" results for this collection will have little or no relevance, as the data files have been designed to detect outliers. Similarly, times for "trivial" files will be negligible, and should not be reported.
+
+Note: New files can be added to this collection, so the overall average for the collection should not be reported as a benchmark. Results on this corpus should be reported for individual files, or a subset should be identified. Existing files in the collection will not be changed or removed.
+
+There are 4 files in this corpus:
+
+File	Abbrev	Category	Size
+a.txt	a	The letter 'a'	 1
+aaa.txt	aaa	The letter 'a', repeated 100,000 times.	 100000
+alphabet.txt	alphabet	Enough repetitions of the alphabet to fill 100,000 characters	 100000
+random.txt	random	100,000 characters, randomly selected from [a-z|A-Z|0-9|!| ] (alphabet size 64)	 100000
+(All file sizes in bytes)
+
+The full set of files is available as artificl.tar.gz or artificl.zip
+
+The Large Corpus
+This is a collection of relatively large files. While most compression methods can be evaluated satisfactorilly on smaller files, some require very large amounts of data to get good compression, and some are so fast that the larger size makes speed measurement more reliable. New files can be added to this collection.
+
+Note: New files can be added to this collection, so the overall average for the collection should not be reported as a benchmark. Results on this corpus should be reported for individual files, or a subset should be identified. Existing files in the collection will not be changed or removed.
+
+There are 3 files in this corpus:
+
+File	Abbrev	Category	Size
+E.coli	E.coli	Complete genome of the E. Coli bacterium	 4638690
+bible.txt	bible	The King James version of the bible	 4047392
+world192.txt	world	The CIA world fact book	 2473400
+(All file sizes in bytes)
+
+The full set of files is available as large.tar.gz or large.zip
+
+The Miscellaneous Corpus
+This is a collection of "miscellaneous" files that is designed to be added to by researchers and others wishing to publish compression results using their own files.
+
+Note: New files can be added to this collection, so the overall average for the collection should not be reported as a benchmark. Results on this corpus should be reported for individual files, or a subset should be identified. Existing files in the collection will not be changed or removed.
+
+There are 1 files in this corpus:
+
+File	Abbrev	Category	Size
+pi.txt	pi	The first million digits of pi	 1000000
+(All file sizes in bytes)
+
+The full set of files is available as misc.tar.gz or misc.zip
+
+The Calgary Corpus
+This was developed in the late 1980s, and during the 1990s became something of a de facto standard for lossless compression evaluation. The collection is now rather dated, but it is still reasonably reliable as a performance indicator. It is still available so that older results can be compared. The collection will not be changed, although there are four files (paper3, paper4, paper5 and paper6) that have been used in some evaluations but are no longer in the corpus because they don't add to the evaluation.
+
+There are 14 files in this corpus:
+
+File	Abbrev	Category	Size
+bib	bib	Bibliography (refer format)	 111261
+book1	book1	Fiction book	 768771
+book2	book2	Non-fiction book (troff format)	 610856
+geo	geo	Geophysical data	 102400
+news	news	USENET batch file	 377109
+obj1	obj1	Object code for VAX	 21504
+obj2	obj2	Object code for Apple Mac	 246814
+paper1	paper1	Technical paper	 53161
+paper2	paper2	Technical paper	 82199
+pic	pic	Black and white fax picture	 513216
+progc	progc	Source code in "C"	 39611
+progl	progl	Source code in LISP	 71646
+progp	progp	Source code in PASCAL	 49379
+trans	trans	Transcript of terminal session	 93695
+(All file sizes in bytes)
+
+The full set of files is available as calgary.tar.gz or calgary.zip
+
+
+This page last updated Monday, January 08, 2001 by Matt Powell	Department of Computer Science	University of Canterbury
