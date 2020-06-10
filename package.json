@@ -4,7 +4,8 @@
   "description": "fun with nodejs core modules ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "crypto:basic": "node crypto/basic.js",
+    "crypto:shasum": "node crypto/shasum-file.js"
   },
   "author": "",
   "license": "ISC",
