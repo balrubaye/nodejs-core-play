@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "crypto:basic": "node crypto/basic.js",
-    "crypto:shasum": "node crypto/shasum-file.js"
+    "crypto:shasum": "node crypto/shasum-file.js",
+    "stream:stat" : "node streams/stat-stream.js"
   },
   "author": "",
   "license": "ISC",

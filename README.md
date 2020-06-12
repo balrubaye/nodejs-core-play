@@ -27,4 +27,5 @@ To use any of the files just run one of the tasks
 ```
 npm run crypto:basic
 npm run crypto:shasum
+npm run stream:stat
 ```
