@@ -1,10 +1,13 @@
 const fs = require('fs');
 const path = require('path');
+const { finished } = require('stream');
 
 const rdr = fs.createReadStream(
   path.resolve(__dirname, '../resources/file1.txt')
 );
-const dest = process.stdout;
+const dest = fs.createWriteStream(
+  path.resolve(__dirname, '../resources/merge-stream.txt')
+);
 
 /**
  * Merging Streams
@@ -30,7 +33,13 @@ function mergeStreams(sources, destination, done) {
   return destination;
 }
 
-//dest.on('finish', () => console.log('finiiiiiii'));
+finished(dest, (err) => {
+  if (err) console.error('something went wrong: ', err);
+  else {
+    console.log('Merge is finished');
+  }
+});
+
 mergeStreams([process.stdin, rdr], dest, () =>
   console.log('everything is done')
 );
