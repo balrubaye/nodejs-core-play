@@ -6,9 +6,10 @@
   "scripts": {
     "crypto:basic": "node crypto/basic.js",
     "crypto:shasum": "node crypto/shasum-file.js",
-    "stream:stat" : "node streams/stat-stream.js"
+    "stream:stat" : "node streams/stat-stream.js",
+    "stream:merge" : "echo hello world | node streams/merger.js"
   },
-  "author": "",
+  "author": "Bassam Rubaye",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^7.2.0",
