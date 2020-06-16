@@ -7,7 +7,9 @@
     "crypto:basic": "node crypto/basic.js",
     "crypto:shasum": "node crypto/shasum-file.js",
     "stream:stat" : "node streams/stat-stream.js",
-    "stream:merge" : "echo hello world | node streams/merger.js"
+    "stream:merge" : "echo hello world | node streams/merger.js",
+    "cp:pipe" : "node cp/pipe.js",
+    "cp:shell": "node cp/shell.js"
   },
   "author": "Bassam Rubaye",
   "license": "ISC",
