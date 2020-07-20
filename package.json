@@ -6,6 +6,7 @@
   "scripts": {
     "crypto:basic": "node crypto/basic.js",
     "crypto:shasum": "node crypto/shasum-file.js",
+    "crypto:jwt" : "node crypto/generate-jwt.js",
     "stream:stat" : "node streams/stat-stream.js",
     "stream:merge" : "echo hello world | node streams/merger.js",
     "cp:pipe" : "node cp/pipe.js",
